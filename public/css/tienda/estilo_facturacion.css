@@ -1,0 +1,22 @@
+.fac-container-derecho{
+    font-size: 16px;
+}
+.fac-container-derecho div{
+    font-size: 16px;
+}
+.fac-container-derecho .valor-resumen{
+    position: absolute;
+    font-size: 1em;
+    right: 15px;
+    display: inline;
+}
+.valor-resumen::after{
+    content: " $";
+}
+
+@media screen and (max-width: 986px){
+    .fact-container-derecho{
+
+    width: 100%;
+    }
+}

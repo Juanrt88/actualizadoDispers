@@ -1,0 +1,213 @@
+
+
+
+.producto-imagen-grande {
+    width: 417px;
+    height: 478px;
+    /* overflow: hidden; */
+    min-width: 217px;
+    min-height: 278;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.container-imagenes-min {
+    display: inline;
+}
+
+.container-info {
+    display: inline;
+    font-size: 16px;
+}
+
+.producto-imagen-grande img {
+    width: 100%;
+    height: 100%;
+
+}
+.container-info #deter-producto-nombre{
+ font-size: 0.6em;
+}
+
+#lista-imagenes {
+    margin: 20px;
+}
+
+#lista-imagenes img {
+    width: 57px;
+    height: 65px;
+}
+
+#lista-imagenes .activado {
+    box-shadow: 0px 0px 2px #DC2545;
+
+}
+
+.container-cantidad #id_num_prenda{
+    font-size: 1.4em;
+}
+
+/* botones paleta de colores */
+.boton-color {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    margin: 5px;
+    padding: 10px;
+    border: 0px;
+}
+
+.boton-color:hover {
+    opacity: 0.50;
+    -moz-opacity: .50;
+    filter: alpha (opacity=50);
+}
+
+.amarillo {
+    background-color: #F1C40F;
+}
+
+.blanco {
+    background-color: #ffffff;
+    border: solid 1px #D5DBDB;
+}
+
+.azul {
+    background: #0D47A1;
+}
+
+.rojo {
+    background-color: #C62828;
+}
+
+.negro {
+    background-color: #000000;
+}
+
+.modal-footer a{
+    text-decoration: none;
+}
+.modal-footer a:hover{
+    text-decoration: none;
+    color: #ffffff;
+}
+/* Productos relaciondos */
+.img-product-recommend {
+    max-width: 254px;
+    max-height: 275px;
+}
+
+.slider-items {
+    width: auto;
+    height: 395px;
+    overflow-y: hidden;
+    overflow-x: auto;
+    display: block;
+    padding: 10px;
+    white-space: nowrap;
+}
+
+.slider-items .item-recommend {
+    padding: 5px;
+    margin: 10px;
+    display: inline-block;
+    text-align: center;
+}
+
+/*----------Cambiar el aspecto de la barra horizontal y vertical-----------*/
+
+.slider-items::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.slider-items::-webkit-scrollbar:vertical {
+    width:10px;
+}
+
+.slider-items::-webkit-scrollbar-button:increment,.contenedor::-webkit-scrollbar-button {
+    display: none;
+} 
+
+.slider-items::-webkit-scrollbar:horizontal {
+    height: 15px;
+}
+
+.slider-items::-webkit-scrollbar-thumb {
+    background-color: #797979;
+    border-radius: 20px;
+    border: 2px solid #f1f2f3;
+}
+
+.slider-items::-webkit-scrollbar-track {
+    border-radius: 10px;  
+}
+
+/*----------FIN-----------*/
+
+
+
+
+
+/*--suma y resta--*/
+.container-cantidad div {
+    display: inline-block;
+    margin: 15px;
+    text-align: center;
+}
+
+
+#btn-menos,
+#btn-mas {
+    text-align: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    background-color: #f2f2f2;
+    width: 30px;
+    height: 30px;
+
+}
+
+.mano {
+    cursor: pointer;
+
+}
+
+.texto-no-seleccionable {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+
+@media screen and (max-width: 996px) {
+
+    .producto-imagen-grande {
+        width: 317px;
+        height: 378px;
+        display: block;
+    }
+
+    .container-info,
+    .container-imagenes-min {
+        display: block;
+    }
+
+    .container-imagenes-min {
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+
+    .producto-imagen-grande {
+        width: 217px;
+        height: 278px;
+    }
+
+}

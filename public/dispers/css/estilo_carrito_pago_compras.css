@@ -1,0 +1,346 @@
+/* --------------------ESTILO PARA CARRITO DE PRODUCTOS----------------------- */
+
+.mano {
+    cursor: pointer;
+}
+
+.container-navbar{
+    background-color: #ffffff;
+}
+
+/* Parte izquierda */
+.separador-carrito {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border: 1px solid #D8D8D8
+}
+
+#btn-vaciar-carrito {
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+}
+
+#btn-vaciar-carrito:hover {
+    background-color: #d84e4e;
+}
+
+.item-carrito {
+    margin: 10px;
+    padding: 5px;
+    position: relative;
+    height: 185px;
+}
+
+.container-imagen {
+    position: relative;
+    height: 173px;
+}
+
+.container-imagen img {
+    margin-right: 15px;
+    height: 100%;
+}
+
+.info-item-carrito {
+    top: 15px;
+    left: 185px;
+    position: absolute;
+    font-size: 16px;
+}
+
+.info-item-carrito h5 {
+    font-size: 1em;
+}
+
+.info-item-carrito h6 {
+    font-size: 1em;
+}
+
+.modificar-cantidad {
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+}
+
+.cantidad-producto {
+    font-size: 1em;
+}
+
+
+.btn-circular {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+.btn-circular:hover {
+    background-color: cadetblue;
+}
+
+.btn-elimina-producto {
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    bottom: 15px;
+    right: 15px;
+}
+
+/* Para moviles */
+@media screen and (max-width: 980px) {
+    .item-carrito {
+        height: auto;
+    }
+
+    #btn-vaciar-carrito,
+    .modificar-cantidad,
+    .info-item-carrito {
+        position: relative;
+        display: inline-block;
+        top: 0;
+        right: 0;
+        left: 0;
+        transform: none;
+    }
+
+    .modificar-cantidad {
+        width: 100%;
+    }
+
+    /* .btn-elimina-producto{
+        bottom: 15px;
+        right: 15px;
+    } */
+}
+
+/* Fin */
+
+/*  Parte Derecha */
+#container-resumen-carrito {
+    margin-top: 25px;
+    font-size: 16px;
+    text-align: left;
+}
+
+#container-resumen-carrito h4 {
+    font-size: 1em;
+    margin-left: 15px;
+    
+}
+#container-resumen-carrito div, hr{
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.texto-resumen-pedido{
+    font-size: 1em;
+    text-align: left;
+    display: inline;
+}
+
+.valor-resumen{
+    position: absolute;
+    font-size: 1em;
+    right: 15px;
+    display: inline;
+}
+
+.valor-resumen::after{
+    content: " $";
+}
+.centrar-forzado{
+    text-align: center;
+}
+
+/* ESTILOS PARA FACTURACION */
+#fact-container-derecho .valor-resumen{
+    /* position: absolute; */
+    font-size: 1em;
+    right: 15px;
+    display: inline;
+}
+#fact-container-derecho{
+    font-size: 16px;
+}
+
+
+#fact-items-compra .info-item-carrito{
+    top: 5px;
+    left: 100px;
+    line-height: 5px;
+    font-size: 1em;
+}
+#fact-items-compra{
+    position: relative;
+    height: 291px;
+    overflow-y: auto
+}
+
+#fact-items-compra .item-carrito {
+    margin: 10px;
+    padding: 5px;
+    position: relative;
+    height: 105px;
+    overflow: hidden;
+}
+#fact-items-compra .container-imagen {
+    position: relative;
+    height: 93px;
+}
+
+#fact-items-compra .price_now-price{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 5px;
+}
+
+/* ESTILO PARA PAGO.PHP */
+.credit-card-div  span { padding-top:10px; }
+.credit-card-div img { padding-top:30px;
+width: 52px; height: 65px;
+text-align: center;}
+.credit-card-div .small-font { font-size:9px; }
+.credit-card-div .pad-adjust { padding-top:10px; }
+#container-pago-info{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 50%;
+    transform: translateX(-50%);
+ 
+ }
+
+ /* ESTILO PARA COMPRAS REALIZADAS */
+
+ .no-seleccionable{
+   -moz-user-select: none; 
+   -webkit-user-select: none;
+   -ms-user-select: none;
+   user-select: none; 
+}
+ #container-compras{
+     font-size: 16px;
+ }
+ #container-compras .compra-unitaria{
+    height: 125px;
+ }
+
+ .compra-unitaria:hover{
+    background-color: #d10024 ;
+  
+ }
+ .compra-unitaria div:hover{
+    color: #ffffff;
+ }
+ .compra-unitaria>a:link{
+    text-decoration: none;
+    color: #ffffff;
+ }
+
+ #container-compras .container-imagen{
+     height: 107px;
+ }
+ #container-compras .info-compra{
+    position: absolute;
+    left: 110px;
+    top: 2px;
+ }
+ #container-compras .precio-pagado{
+     position: absolute;
+     right: 20px;
+     top: 50%;
+    transform: translateY(-50%);
+ }
+
+ @media screen and (max-width: 980px) {
+    #fact-items-compra .info-item-carrito{
+    left: 13px;
+    }
+    
+    #fact-items-compra .item-carrito{
+        height: 150px;
+    }
+    /* #fact-items-compra .price_now-price{
+        display: block;
+        position: relative;
+        left: 10px;
+        top: 30px;
+    } */
+}
+
+
+@media screen and (max-width: 420px) {
+    #container-compras .compra-unitaria{
+        height: 285px;
+     }
+     #container-compras .info-compra,  #container-compras .precio-pagado {
+         top: 0;
+         left: 0;
+        position: relative;
+        display: block;
+        transform: none;
+     }
+}
+
+/* Estilo para detalle_compra */
+#container-productos-pedido .producto-pedido{
+    height: 120px;
+    /* position: relative; */
+}
+#container-productos-pedido .container-imagen{
+    height: 108px;
+    margin: 5px;
+}
+
+#container-resumen-compra .info-pedido-detallado p, #container-resumen-compra .pago-pedido p{
+    display: inline;
+}
+
+#container-resumen-compra .info-pedido-detallado div{
+    margin: 5px;
+}
+
+#div-factura{
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.producto-pedido .producto-pedido-info{
+    line-height: 5px;
+    position: absolute;
+    left: 110px;
+    top: 7px;
+}
+.producto-pedido  .producto-total-pedido{
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}
+.info-pedido-detallado #div-factura a{
+    color: #d10024;
+}
+.info-pedido-detallado #div-factura a:hover{
+    color: #720113;
+}
+
+@media screen and (max-width: 320px) {
+    #container-productos-pedido .producto-pedido{
+        height: 160px;
+        /* position: relative; */
+    }
+}
+.dolares::after {
+    content: " $";
+}

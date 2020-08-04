@@ -1,0 +1,174 @@
+
+body {
+    background-color: #f1f1f1;
+}
+
+.mano {
+    cursor: pointer;
+}
+
+
+
+/* Estilo para catalogo */
+.contenedor-catalogo {
+display: inline-block;
+text-align: center;
+padding-top: 20px;
+width: 70%;
+}
+
+
+.product-catalog img {
+    width: 100%;
+    height: 250px;
+      
+}
+.product-catalog-info p{
+    margin: 5px;
+
+}
+.product-catalog a:link{
+    text-decoration: none;
+}
+.product-catalog-info #nombre{
+    font-size: 15px;
+    color: #6E6E6E;
+    text-align: center;
+    
+}
+
+.product-catalog-info #precio{
+    font-size: 20px;
+    color: #000;
+    text-align: right;
+    
+}
+
+.product-catalog {
+    align-content: center;
+    margin: 20px 5px;
+    background-color: #ffffff;
+    width: 230px;
+    height: 320px;
+    box-shadow: 0px 0px 5px #666; 
+    display: inline-block; 
+}
+.product-catalog:hover{
+    box-shadow: 0px 0px 10px #D10024;
+}
+
+/*Estilo para catalogo */
+
+
+/* Estilo para menu */
+
+
+.btn-menu {
+    display: none;
+    padding: 0px;
+    margin: 0px;
+    background: #D10024;
+    color: white;
+}
+
+.btn-menu .icono {
+    float: right;
+}
+
+
+.contenedor-menu {
+    /* width: 15%; */
+    /* min-width: 100px; */
+    /* width: 100%; */
+    /* height: 100%; */
+    /* margin: 5px; */
+    line-height: 18px;
+}
+.contenedor-menu .menu{
+    /* width: 100%; */
+
+}
+
+.contenedor-menu ul,  .contenedor-menu>a{
+    list-style: none;
+    padding: 2px;
+}
+
+.contenedor-menu .menu li a {
+    display: block;
+    padding: 15px 20px;
+    color: #D10024;
+    background-color:#ffffff;
+}
+
+.contenedor-menu .menu li a:hover{
+    background:  #D10024;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.contenedor-menu .menu .icono {
+    font-size: 12px;
+    line-height: 18px;
+} 
+
+.contenedor-menu .menu .icono.derecha {
+    float: right;
+    margin-left: 10px;
+} 
+
+.contenedor-menu .menu ul {
+    /* display: none;  */
+}
+
+.contenedor-menu .menu ul li>a{
+    background: #f2f2f2;
+    color: #D10024;
+}
+
+
+
+.seleccionado a{
+    background-color: #D10024 !important;
+    color: #ffffff !important;
+}
+.selecionado-p{
+    background-color: #D10024 !important;
+    color: #ffffff !important;
+}
+
+@media screen and (max-width: 548px){
+    /* body{
+        padding-top: 80px;        
+    } */
+    .contenedor-menu{
+        background-color: #D10024;
+        position: fixed; 
+        margin:0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        display: block;
+        /* z-index: 1000; */
+    }
+    .contenedor-menu .btn-menu{
+        z-index: 1000;
+        position: fixed; 
+        margin: 0;
+        width: 100%;
+        display: block;
+        padding: 0;
+        overflow: hidden;
+        color: #ffffff;
+        /* height: 40px; */
+        text-decoration: none;
+    }
+
+    .contenedor-menu .menu{
+        display: none;
+    }
+
+}
+
+/* Estilo para menu */
